@@ -8,8 +8,8 @@ Date: 04 June 2021
 
 public class Supplier {
 
-    private int supplierID, productID;
-    private String supplierName, supplierEmail, supplierPhone;
+
+    private String supplierID, productID, supplierName, supplierEmail, supplierPhone;
 
     private Supplier(Builder builder)
     {
@@ -23,16 +23,16 @@ public class Supplier {
 
     public static class Builder {
 
-        private int supplierID, productID;
-        private String supplierName, supplierEmail, supplierPhone;
+
+        private String supplierID, productID, supplierName, supplierEmail, supplierPhone;
 
 
-        public Builder setSupplierID(int supplierID) {
+        public Builder setSupplierID(String supplierID) {
             this.supplierID = supplierID;
             return this;
         }
 
-        public Builder setProductID(int productID) {
+        public Builder setProductID(String productID) {
             this.productID = productID;
             return this;
         }
