@@ -1,11 +1,11 @@
-package za.ac.cput.ADPAssignment3.Entity;
+package za.ac.cput.Entity;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProductEntityTest {
+class ProductTest {
 
     @BeforeEach
     void setUp() {
