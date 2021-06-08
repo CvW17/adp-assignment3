@@ -1,3 +1,9 @@
+/* Payment.java
+ Entity for the Payment
+ Author: Cameron van Wyk (219088470)
+ Date: 06 June 2021
+*/
+
 package za.ac.cput.Entity;
 
 public class Payment
