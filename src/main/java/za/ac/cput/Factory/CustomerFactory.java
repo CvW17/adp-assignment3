@@ -30,7 +30,7 @@ public class CustomerFactory {
         String custID = UUID.randomUUID().toString();
 
         //Customer cannot be created if email is invalid.
-        if(validEmail(custEmail) == false) {
+        if(!validEmail(custEmail)) {
             return null;
         }
 

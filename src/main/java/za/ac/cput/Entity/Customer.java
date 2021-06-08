@@ -56,6 +56,17 @@ public class Customer {
             return new Customer(this);
 
         }
+
+        //Copy of Customer
+        public Builder copy(Customer customer) {
+            this.custID = customer.custID;
+            this.custFirstName = customer.custFirstName;
+            this.custLastName = customer.custLastName;
+            this.custContact = customer.custContact;
+            this.custEmail = customer.custEmail;
+            return this;
+        }
+
     }
 
     @Override
