@@ -9,7 +9,7 @@ package za.ac.cput.Entity;
  */
 
 public class Customer {
-    private int custID;
+    private String custID;
     private String custFirstName, custLastName, custContact, custEmail;
 
     private Customer(Builder builder) {
@@ -23,31 +23,31 @@ public class Customer {
 
     //Inner class
     public static class Builder {
-        private int custID;
+        private String custID;
         private String custFirstName, custLastName, custContact, custEmail;
 
 
-        public Builder setCustID(int custID) {
+        public Builder custID(String custID) {
             this.custID = custID;
             return this;
         }
 
-        public Builder setCustFirstName(String custFirstName) {
+        public Builder custFirstName(String custFirstName) {
             this.custFirstName = custFirstName;
             return this;
         }
 
-        public Builder setCustLastName(String custLastName) {
+        public Builder custLastName(String custLastName) {
             this.custLastName = custLastName;
             return this;
         }
 
-        public Builder setCustContact(String custContact) {
+        public Builder custContact(String custContact) {
             this.custContact = custContact;
             return this;
         }
 
-        public Builder setCustEmail(String custEmail) {
+        public Builder custEmail(String custEmail) {
             this.custEmail = custEmail;
             return this;
         }
