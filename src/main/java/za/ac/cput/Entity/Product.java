@@ -1,3 +1,9 @@
+/* Product.java
+Product Entity class created using Builder design pattern
+Author: Antin Williams 219212058
+Date: 09 June 2021
+ */
+
 package za.ac.cput.Entity;
 
 public class Product {
