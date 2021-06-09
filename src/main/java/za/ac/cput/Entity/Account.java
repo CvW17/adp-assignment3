@@ -1,15 +1,17 @@
 package za.ac.cput.Entity;
-
-import java.util.*;
-
+/* Account.java
+Entity for the Account
+Author: Tauriq-Allie Wilkinson  (219071330)
+Date: 9 June 2021
+ */
 public class Account {
-    private int customerID;
-    private String accountBillingAddress;
-    private Date accountOpen,accountClose;
+
+    private String custID, accountBillingAddress,accountOpen,accountClose;
+
 
     private Account(Builder builder){
 
-        this.customerID = builder.customerID;
+        this.custID = builder.custID;
         this.accountBillingAddress = builder.accountBillingAddress;
         this.accountOpen = builder.accountOpen;
         this.accountClose = builder.accountClose;
@@ -18,7 +20,7 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
-                "customerID=" + customerID +
+                "custID=" + custID +
                 ", accountBillingAddress='" + accountBillingAddress + '\'' +
                 ", accountOpen=" + accountOpen +
                 ", accountClose=" + accountClose +
@@ -26,12 +28,13 @@ public class Account {
     }
 
     public static class Builder{
-        public int customerID;
+        public String custID;
         public String accountBillingAddress;
-        public Date accountOpen, accountClose;
+        public String accountOpen;
+        public String accountClose;
 
-        public Builder setCustomerID(int customerID) {
-            this.customerID = customerID;
+        public Builder setCustID(String custID) {
+            this.custID = custID;
             return this;
         }
 
@@ -40,12 +43,12 @@ public class Account {
             return this;
         }
 
-        public Builder setAccountOpen(Date accountOpen) {
+        public Builder setAccountOpen(String accountOpen) {
             this.accountOpen = accountOpen;
             return this;
         }
 
-        public Builder setAccountClose(Date accountClose) {
+        public Builder setAccountClose(String accountClose) {
             this.accountClose = accountClose;
             return this;
         }
@@ -53,7 +56,7 @@ public class Account {
             return new Account(this);
         }
         public Account.Builder copy(Account account){
-            this.customerID = account.customerID;
+            this.custID = account.custID;
             this.accountBillingAddress = account.accountBillingAddress;
             this.accountOpen = account.accountOpen;
             this.accountClose= account.accountClose;
