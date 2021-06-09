@@ -1,3 +1,9 @@
+/* Payment.java
+ Entity for Payment Factory test
+ Author: Cameron van Wyk (219088470)
+ Date: 09 June 2021
+*/
+
 package za.ac.cput.Factory;
 
 import org.junit.jupiter.api.Test;
