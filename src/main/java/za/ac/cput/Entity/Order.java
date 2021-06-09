@@ -7,7 +7,7 @@
  */
 
 /*
-    made customerID and productID a String data type
+    made customerID and productID a String data type.
  */
 
 
