@@ -3,7 +3,13 @@
  *  Entity for for the Order
  *  Author: Abongile Tshopi (214254151)
  *  Date created: 08-06-2021
+ *
  */
+
+/*
+    made customerID and productID a String
+ */
+
 
 package za.ac.cput.Entity;
 
