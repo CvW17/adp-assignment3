@@ -7,7 +7,7 @@ Date: 09 June 2021
 package za.ac.cput.Entity;
 
 public class Product {
-    public int productID = 0, supplierID = 0;
+    public String productID, supplierID;
     public double productPrice = 0.0;
     public String productName = "";
 
@@ -29,26 +29,26 @@ public class Product {
     }
 
     public static class Builder{
-        public int productID = 0, supplierID = 0;
+        public String productID, supplierID;
         public double productPrice = 0.0;
         public String productName = "";
 
-        public Builder setProductID(int productID) {
+        public Builder productID(String productID) {
             this.productID = productID;
             return this;
         }
 
-        public Builder setSupplierID(int supplierID) {
+        public Builder supplierID(String supplierID) {
             this.supplierID = supplierID;
             return this;
         }
 
-        public Builder setProductPrice(double productPrice) {
+        public Builder productPrice(double productPrice) {
             this.productPrice = productPrice;
             return this;
         }
 
-        public Builder setProductName(String productName) {
+        public Builder productName(String productName) {
             this.productName = productName;
             return this;
         }
