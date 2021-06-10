@@ -14,10 +14,13 @@
 package za.ac.cput.Entity;
 
 public class Order {
-    private  String custID, productID, orderDate, orderShippedDate, orderAddress, orderStatus;
+
+
+    private  String orderID,custID, productID, orderDate, orderShippedDate, orderAddress, orderStatus;
     private double orderTotal;
 
     private Order(Builder builder) {
+        this.orderID = builder.orderID;
         this.custID = builder.custID;
         this.productID = builder.productID;
         this.orderDate = builder.orderDate;
@@ -32,8 +35,13 @@ public class Order {
 
 
     public static class Builder{
-        private String custID, productID, orderDate, orderShippedDate, orderAddress, orderStatus;
+        private String orderID, custID, productID, orderDate, orderShippedDate, orderAddress, orderStatus;
         private double orderTotal;
+
+        public Builder setOrderID(String orderID) {
+            this.orderID = orderID;
+            return this;
+        }
 
         public Builder setCustID(String custID) {
             this.custID = custID;
@@ -78,6 +86,7 @@ public class Order {
 
 
         public Builder copy(Order order){
+            this.orderID = order.orderID;
             this.custID = order.custID;
             this.productID = order.productID;
             this.orderDate = order.orderDate;
@@ -88,10 +97,12 @@ public class Order {
             return this;
         }
     }
+
     @Override
     public String toString() {
         return "Order{" +
-                "custID='" + custID + '\'' +
+                "orderID='" + orderID + '\'' +
+                ", custID='" + custID + '\'' +
                 ", productID='" + productID + '\'' +
                 ", orderDate='" + orderDate + '\'' +
                 ", orderShippedDate='" + orderShippedDate + '\'' +
@@ -100,5 +111,4 @@ public class Order {
                 ", orderTotal=" + orderTotal +
                 '}';
     }
-
 }
