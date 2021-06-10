@@ -1,12 +1,13 @@
 package za.ac.cput.Entity;
 /* Account.java
-Account Entity
+Entity for the Account
 Author: Tauriq-Allie Wilkinson  (219071330)
-Date: 04 June 2021
+Date: 9 June 2021
  */
 public class Account {
-    ;
-    private String  custID,accountBillingAddress, accountOpen,accountClose;
+
+    private String custID, accountBillingAddress,accountOpen,accountClose;
+
 
     private Account(Builder builder){
 
