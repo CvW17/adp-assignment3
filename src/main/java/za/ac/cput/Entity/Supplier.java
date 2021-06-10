@@ -8,7 +8,6 @@ Date: 04 June 2021
 
 public class Supplier {
 
-
     private String supplierID, productID, supplierName, supplierEmail, supplierPhone;
 
     private Supplier(Builder builder)
@@ -22,7 +21,6 @@ public class Supplier {
     }
 
     public static class Builder {
-
 
         private String supplierID, productID, supplierName, supplierEmail, supplierPhone;
 

@@ -8,7 +8,7 @@ package za.ac.cput.Entity;
 
 public class Payment
 {
-    private int cusomterID;
+    private String cusomterID;
     private String paymentDate, paymentDetails;
     private double paymentTotal;
 
@@ -33,11 +33,11 @@ public class Payment
 
     public static class Builder
     {
-        private int cusomterID;
+        private String cusomterID;
         private String paymentDate, paymentDetails;
         private double paymentTotal;
 
-        public Builder setCusomterID(int cusomterID)
+        public Builder setCusomterID(String cusomterID)
         {
             this.cusomterID = cusomterID;
             return this;
