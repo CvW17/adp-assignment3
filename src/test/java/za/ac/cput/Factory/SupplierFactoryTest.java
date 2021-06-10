@@ -43,7 +43,7 @@ public class SupplierFactoryTest {
         assertSame(s,s);
     }
 
-    @Test                                                           //Waits 5 seconds before test timesout
+    @Test                                                           //Waits 5 seconds before test timeout
     @Timeout(10)
     void testTimeout() throws InterruptedException {
             Thread.sleep(5000);
