@@ -1,5 +1,15 @@
 package za.ac.cput.Factory;
 
+/*
+ *  Name: Tye Walker
+ *  Student Number: 218338562
+ *  Group: 23
+ *
+ *  CustomerFactoryTest class
+ */
+
+
+
 import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.Customer;
 import za.ac.cput.Factory.CustomerFactory;
@@ -19,7 +29,7 @@ class CustomerFactoryTest {
         assertNotNull(c);
     }
 
-    //This test WILL fail
+    //This test WILL fail because the email is invalid.
     @Test
     void valiTestFail() {
         Customer c = CustomerFactory.build("John","Doe","0123456789","John``Doe@gmail.com");
