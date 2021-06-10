@@ -102,6 +102,6 @@ class CustomerFactoryTest {
     void valiTestFail() {
         Customer c = CustomerFactory.build("John","Doe","0123456789","John``Doe@gmail.com");
         System.out.println(c);
-       // assertNotNull(c);
+        assertNotNull(c);
     }
 }
