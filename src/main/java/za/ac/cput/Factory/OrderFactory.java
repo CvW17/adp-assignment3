@@ -30,4 +30,12 @@ public class OrderFactory {
 
         return order;
     }
+
+    public static Order build(String custID, String productID, String orderDate, String orderShippedDate,
+                              String orderAddress, String orderStatus, double orderTotal) {
+
+
+
+        return null;
+    }
 }

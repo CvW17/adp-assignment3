@@ -14,6 +14,8 @@
 package za.ac.cput.Entity;
 
 public class Order {
+
+
     private  String orderID,custID, productID, orderDate, orderShippedDate, orderAddress, orderStatus;
     private double orderTotal;
 
