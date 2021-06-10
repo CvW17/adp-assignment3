@@ -14,7 +14,6 @@ public class AccountFactory {
     public static Account createAccount(String accountBillingAddress, String accountOpen, String accountClose) {
 
         String cID = UUID.randomUUID().toString();
-
         Account acc = new Account.Builder()
                 .setCustID(cID)
                 .setAccountBillingAddress(accountBillingAddress)
