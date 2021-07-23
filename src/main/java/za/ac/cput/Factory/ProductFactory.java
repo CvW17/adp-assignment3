@@ -5,7 +5,7 @@ Date: 09 June 2021
  */
 package za.ac.cput.Factory;
 
-import za.ac.cput.Entity.Product;
+import za.ac.cput.Entity.Product.Product;
 
 import java.util.UUID;
 

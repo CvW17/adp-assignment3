@@ -7,7 +7,7 @@
 package za.ac.cput.Factory;
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.Payment;
+import za.ac.cput.Entity.User.Payment;
 
 class PaymentFactoryTest
 {

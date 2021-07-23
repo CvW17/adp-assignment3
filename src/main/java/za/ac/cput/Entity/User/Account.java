@@ -1,4 +1,4 @@
-package za.ac.cput.Entity;
+package za.ac.cput.Entity.User;
 /* Account.java
 Entity for the Account
 Author: Tauriq-Allie Wilkinson  (219071330)

@@ -4,7 +4,7 @@
  Date: 06 June 2021
 */
 
-package za.ac.cput.Entity;
+package za.ac.cput.Entity.User;
 
 public class Payment
 {

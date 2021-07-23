@@ -1,4 +1,4 @@
-package za.ac.cput.Entity;
+package za.ac.cput.Entity.User;
 
 /*
  *  Name: Tye Walker

@@ -9,7 +9,7 @@ Date: 09 June 2021
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Entity.Supplier;
+import za.ac.cput.Entity.Product.Supplier;
 
 import static org.junit.jupiter.api.Assertions.*;
 

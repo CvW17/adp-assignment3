@@ -10,7 +10,7 @@ package za.ac.cput.Factory;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Entity.Order;
+import za.ac.cput.Entity.Product.Order;
 
 import static org.junit.jupiter.api.Assertions.*;
 

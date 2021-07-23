@@ -6,7 +6,7 @@
 
 package za.ac.cput.Factory;
 
-import za.ac.cput.Entity.Payment;
+import za.ac.cput.Entity.User.Payment;
 import java.util.UUID;
 
 public class PaymentFactory

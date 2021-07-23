@@ -8,7 +8,7 @@
 
 package za.ac.cput.Factory;
 
-import za.ac.cput.Entity.Order;
+import za.ac.cput.Entity.Product.Order;
 import za.ac.cput.util.GenericHelper;
 
 public class OrderFactory {
