@@ -8,13 +8,7 @@ package za.ac.cput.Repository.User;
 
 import za.ac.cput.Entity.User.Payment;
 
-public class PaymentRepository
-{
-
-    public PaymentRepository()
-    {
-
-    }
+public class PaymentRepository {
 
     public Payment create(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
     {
@@ -31,7 +25,7 @@ public class PaymentRepository
         return null;
     }
 
-    public void delete(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
+    public void delete(String customerID)
     {
 
     }

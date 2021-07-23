@@ -12,7 +12,7 @@ public class PaymentFactory
 {
     public static Payment createPayment(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
     {
-        Payment payment = new Payment.Builder().setCusomterID(customerID)
+        Payment payment = new Payment.Builder().setCustomerID(customerID)
                 .setPaymentDate(paymentDate)
                 .setPaymentDetails(paymentDetails)
                 .setPaymentTotal(paymentTotal).build();
