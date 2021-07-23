@@ -15,6 +15,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import za.ac.cput.Entity.User.Customer;
+import za.ac.cput.Factory.User.CustomerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -6,7 +6,7 @@
  */
 
 
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.Product;
 
 import za.ac.cput.Entity.Product.Order;
 import za.ac.cput.util.GenericHelper;

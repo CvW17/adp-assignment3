@@ -7,10 +7,6 @@
 package za.ac.cput.Repository.User;
 
 import za.ac.cput.Entity.User.Payment;
-import za.ac.cput.Factory.PaymentFactory;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class PaymentRepository
 {

@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.User;
 /* AccountFactory.java
 Entity for the Account
 Author: Tauriq-Allie Wilkinson  (219071330)

@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.Product;
 
 /* SupplierFactory.java
 Factory for Supplier

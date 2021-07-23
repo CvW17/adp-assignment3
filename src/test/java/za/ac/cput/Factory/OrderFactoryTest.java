@@ -11,6 +11,7 @@ package za.ac.cput.Factory;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import za.ac.cput.Entity.Product.Order;
+import za.ac.cput.Factory.Product.OrderFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 

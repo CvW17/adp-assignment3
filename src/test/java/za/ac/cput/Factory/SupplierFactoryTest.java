@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import za.ac.cput.Entity.Product.Supplier;
+import za.ac.cput.Factory.Product.SupplierFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.User;
 
 import za.ac.cput.Entity.User.Customer;
 

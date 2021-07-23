@@ -4,15 +4,12 @@
  Date: 09 June 2021
 */
 
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.User;
 
 import za.ac.cput.Entity.User.Payment;
-import java.util.UUID;
 
 public class PaymentFactory
 {
-    String customerID = UUID.randomUUID().toString();
-
     public static Payment createPayment(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
     {
         Payment payment = new Payment.Builder().setCusomterID(customerID)
