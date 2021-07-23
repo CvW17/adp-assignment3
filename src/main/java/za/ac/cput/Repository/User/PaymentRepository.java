@@ -14,21 +14,18 @@ import java.util.Set;
 
 public class PaymentRepository
 {
-    private Set<Payment> paymentDescription;
 
     public PaymentRepository()
     {
-        this.paymentDescription = new HashSet<>();
+
     }
 
     public Payment create(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
     {
-        Payment payment = PaymentFactory.createPayment(paymentDate, paymentDetails, paymentTotal);
-        this.paymentDescription.add(payment);
-        return payment;
+        return null;
     }
 
-    public Payment read(String paymentID)
+    public Payment read(String customerID)
     {
         return null;
     }

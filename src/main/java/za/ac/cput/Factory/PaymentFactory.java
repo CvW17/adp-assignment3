@@ -11,9 +11,10 @@ import java.util.UUID;
 
 public class PaymentFactory
 {
-    public static Payment createPayment(String paymentDate, String paymentDetails, double paymentTotal)
+    String customerID = UUID.randomUUID().toString();
+
+    public static Payment createPayment(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
     {
-        String customerID = UUID.randomUUID().toString();
         Payment payment = new Payment.Builder().setCusomterID(customerID)
                 .setPaymentDate(paymentDate)
                 .setPaymentDetails(paymentDetails)
