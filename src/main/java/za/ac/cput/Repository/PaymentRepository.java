@@ -20,12 +20,12 @@ public class PaymentRepository
         return null;
     }
 
-    public Payment update()
+    public Payment update(Payment payment)
     {
         return null;
     }
 
-    public void delete()
+    public void delete(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
     {
 
     }
