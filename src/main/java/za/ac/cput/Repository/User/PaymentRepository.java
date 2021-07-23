@@ -4,7 +4,7 @@
  Date: 23 July 2021
 */
 
-package za.ac.cput.Repository;
+package za.ac.cput.Repository.User;
 
 import za.ac.cput.Entity.User.Payment;
 
