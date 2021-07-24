@@ -3,9 +3,9 @@ Product Factory class created using Factory design pattern
 Author: Antin Williams 219212058
 Date: 09 June 2021
  */
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.Product;
 
-import za.ac.cput.Entity.Product;
+import za.ac.cput.Entity.Product.Product;
 
 import java.util.UUID;
 

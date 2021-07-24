@@ -1,10 +1,10 @@
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.User;
 /* AccountFactory.java
 Entity for the Account
 Author: Tauriq-Allie Wilkinson  (219071330)
 Date: 10 June 2021
  */
-import za.ac.cput.Entity.Account;
+import za.ac.cput.Entity.User.Account;
 
 import java.util.UUID;
 

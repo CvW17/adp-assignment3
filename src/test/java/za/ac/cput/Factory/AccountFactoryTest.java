@@ -6,11 +6,12 @@ Author: Tauriq-Allie Wilkinson  (219071330)
 Date: 10 June 2021
  */
 
-import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.Account;
+import za.ac.cput.Entity.User.Account;
+import za.ac.cput.Factory.User.AccountFactory;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 

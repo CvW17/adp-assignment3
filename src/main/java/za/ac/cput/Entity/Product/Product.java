@@ -4,7 +4,7 @@ Author: Antin Williams 219212058
 Date: 09 June 2021
  */
 
-package za.ac.cput.Entity;
+package za.ac.cput.Entity.Product;
 
 public class Product {
     public String productID, supplierID;

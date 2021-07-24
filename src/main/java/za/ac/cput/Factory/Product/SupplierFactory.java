@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.Product;
 
 /* SupplierFactory.java
 Factory for Supplier
@@ -7,7 +7,7 @@ Date: 09 June 2021
  */
 
 
-import za.ac.cput.Entity.Supplier;
+import za.ac.cput.Entity.Product.Supplier;
 
 import java.util.UUID;
 

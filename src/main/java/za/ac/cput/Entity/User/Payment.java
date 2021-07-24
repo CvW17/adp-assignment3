@@ -4,27 +4,32 @@
  Date: 06 June 2021
 */
 
-package za.ac.cput.Entity;
+package za.ac.cput.Entity.User;
 
 public class Payment
 {
-    private String cusomterID;
+    private static String customerID;
     private String paymentDate, paymentDetails;
     private double paymentTotal;
 
     private Payment(Builder builder)
     {
-        this.cusomterID = builder.cusomterID;
+        this.customerID = builder.customerID;
         this.paymentDate = builder.paymentDate;
         this.paymentDetails = builder.paymentDetails;
         this.paymentTotal = builder.paymentTotal;
+    }
+
+    public static String getCustomerID()
+    {
+        return customerID;
     }
 
     @Override
     public String toString()
     {
         return "Payment{" +
-                "cusomterID=" + cusomterID +
+                "customerID=" + customerID +
                 ", paymentDate='" + paymentDate + '\'' +
                 ", paymentDetails='" + paymentDetails + '\'' +
                 ", paymentTotal=" + paymentTotal +
@@ -33,13 +38,13 @@ public class Payment
 
     public static class Builder
     {
-        private String cusomterID;
+        private String customerID;
         private String paymentDate, paymentDetails;
         private double paymentTotal;
 
-        public Builder setCusomterID(String cusomterID)
+        public Builder setCustomerID(String customerID)
         {
-            this.cusomterID = cusomterID;
+            this.customerID = customerID;
             return this;
         }
 
@@ -68,7 +73,7 @@ public class Payment
 
         public Builder copy(Payment payment)
         {
-            this.cusomterID = payment.cusomterID;
+            this.customerID = payment.customerID;
             this.paymentDate = payment.paymentDate;
             this.paymentDetails = payment.paymentDetails;
             this.paymentTotal = payment.paymentTotal;
