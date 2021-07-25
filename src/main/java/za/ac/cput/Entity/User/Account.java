@@ -8,6 +8,21 @@ public class Account {
 
     private String custID, accountBillingAddress,accountOpen,accountClose;
 
+    public String getCustID() {
+        return custID;
+    }
+
+    public String getAccountBillingAddress() {
+        return accountBillingAddress;
+    }
+
+    public String getAccountOpen() {
+        return accountOpen;
+    }
+
+    public String getAccountClose() {
+        return accountClose;
+    }
 
     private Account(Builder builder){
 
