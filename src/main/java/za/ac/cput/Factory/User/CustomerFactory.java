@@ -26,7 +26,7 @@ public class CustomerFactory {
     public static Customer build(String custFirstName, String custLastName, String custContact, String custEmail) {
 
         //UniqueID for customer
-        String custID = UUID.randomUUID().toString();
+        String customerRID = UUID.randomUUID().toString();
 
         //Customer cannot be created if email is invalid.
         if(!validEmail(custEmail)) {
@@ -36,6 +36,6 @@ public class CustomerFactory {
         if(custFirstName.isEmpty() || custLastName.isEmpty() || custContact.isEmpty() || custEmail.isEmpty() )
             return null;
 
-        return new Customer.Builder().custID("").custFirstName(custFirstName).custLastName(custLastName).custContact(custContact).custEmail(custEmail).builder();
+        return new Customer.Builder().custID(customerRID).custFirstName(custFirstName).custLastName(custLastName).custContact(custContact).custEmail(custEmail).builder();
     }
 }

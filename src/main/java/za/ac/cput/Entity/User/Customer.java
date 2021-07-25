@@ -21,6 +21,26 @@ public class Customer {
 
     }
 
+    public String getCustID() {
+        return custID;
+    }
+
+    public String getCustFirstName() {
+        return custFirstName;
+    }
+
+    public String getCustLastName() {
+        return custLastName;
+    }
+
+    public String getCustContact() {
+        return custContact;
+    }
+
+    public String getCustEmail() {
+        return custEmail;
+    }
+
     //Inner class
     public static class Builder {
         private String custID;
