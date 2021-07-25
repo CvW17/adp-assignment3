@@ -33,10 +33,7 @@ public class CustomerRepository implements ICustomerRepository {
     // Create Customer
     @Override
     public Customer create(Customer customer) {
-        boolean created = customerDB.add(customer);
-        if (!created) {
-            return null;
-        }
+        this.customerDB.add(customer);
         return customer;
     }
 
