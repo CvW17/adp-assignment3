@@ -17,8 +17,7 @@ class PaymentFactoryTest
     @Test
     public void createPayment()
     {
-        Payment payment = PaymentFactory.createPayment(UUID.randomUUID().toString(),
-                "2021/06/02" , "Payment", 1000);
+        Payment payment = PaymentFactory.createPayment("2021/06/02" , "Payment", 1000);
         System.out.println(payment);
     }
 }

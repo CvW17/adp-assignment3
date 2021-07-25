@@ -7,11 +7,13 @@
 package za.ac.cput.Factory.User;
 
 import za.ac.cput.Entity.User.Payment;
+import za.ac.cput.util.GenericHelper;
 
 public class PaymentFactory
 {
-    public static Payment createPayment(String customerID, String paymentDate, String paymentDetails, double paymentTotal)
+    public static Payment createPayment(String paymentDate, String paymentDetails, double paymentTotal)
     {
+        String customerID = GenericHelper.generateId();
         Payment payment = new Payment.Builder().setCustomerID(customerID)
                 .setPaymentDate(paymentDate)
                 .setPaymentDetails(paymentDetails)
