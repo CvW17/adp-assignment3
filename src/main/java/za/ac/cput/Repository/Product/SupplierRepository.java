@@ -1,4 +1,4 @@
-package za.ac.cput.Repository;
+package za.ac.cput.Repository.Product;
 
 
 import za.ac.cput.Entity.Product.Supplier;
