@@ -1,5 +1,4 @@
 package za.ac.cput.Repository.Product;
-
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -8,6 +7,11 @@ import za.ac.cput.Entity.Product.Supplier;
 import za.ac.cput.Factory.Product.SupplierFactory;
 import za.ac.cput.Repository.Product.SupplierRepository;
 
+/*
+* Author: Robin White - 218034555
+* Test for Supplier Repository
+* 25 July 2021
+*/
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)

@@ -1,5 +1,9 @@
 package za.ac.cput.Repository.Product;
-
+/*
+ * Author: Robin White - 218034555
+ * Test for Supplier Repository
+ * 25 July 2021
+ */
 
 import za.ac.cput.Entity.Product.Supplier;
 
