@@ -1,4 +1,4 @@
-package za.ac.cput.Repository;
+package za.ac.cput.Repository.User;
 
 /*
  *  Name: Tye Walker
@@ -28,7 +28,7 @@ class CustomerRepositoryTest {
     void createTest() {
         Customer created = repository.create(customer);
         assertEquals(created.getCustID(), customer.getCustID());
-        System.out.println("Created: " + created);
+        System.out.println("Create: " + created);
     }
 
     // Test to read Customer:
@@ -41,6 +41,7 @@ class CustomerRepositoryTest {
     }
 
     // Test to update Customer:
+    // Surname changes.
     @Order(3)
     @Test
     void updateTest() {
@@ -61,6 +62,6 @@ class CustomerRepositoryTest {
     @Order(5)
     @Test
     void getAllTest() {
-        System.out.println(repository.getAll());
+        System.out.println("Customers: \n" +repository.getAll());
     }
 }

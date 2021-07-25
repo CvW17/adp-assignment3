@@ -1,4 +1,4 @@
-package za.ac.cput.Repository;
+package za.ac.cput.Repository.User;
 
 /*
  *  Name: Tye Walker
@@ -9,6 +9,7 @@ package za.ac.cput.Repository;
  */
 
 import za.ac.cput.Entity.User.Customer;
+import za.ac.cput.Factory.User.CustomerFactory;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -22,7 +23,8 @@ public class CustomerRepository implements ICustomerRepository {
     }
 
     public static CustomerRepository getRepository() {
-        if (repository == null) {
+        if (repository == null)
+        {
             repository = new CustomerRepository();
         }
         return repository;
@@ -42,7 +44,8 @@ public class CustomerRepository implements ICustomerRepository {
     @Override
     public Customer read(String custID) {
         for (Customer c : customerDB)
-            if (c.getCustID().equals(custID)) {
+            if (c.getCustID().equals(custID))
+            {
                 return c;
             }
         return null;
@@ -52,7 +55,8 @@ public class CustomerRepository implements ICustomerRepository {
     @Override
     public Customer update(Customer customer) {
         Customer firstCustomer = read(customer.getCustID());
-        if (firstCustomer != null) {
+        if (firstCustomer != null)
+        {
             customerDB.remove(firstCustomer);
             customerDB.add(customer);
             return customer;
@@ -71,6 +75,7 @@ public class CustomerRepository implements ICustomerRepository {
         System.out.println("Customer removed.");
     }
 
+    // Get all customers
     public Set<Customer> getAll() {
         return customerDB;
     }
