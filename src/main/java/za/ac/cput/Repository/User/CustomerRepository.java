@@ -26,7 +26,7 @@ public class CustomerRepository implements ICustomerRepository {
         if (repository == null)
         {
             repository = new CustomerRepository();
-        }
+        } 
         return repository;
     }
 
