@@ -1,5 +1,9 @@
 package za.ac.cput.Repository.User;
-
+/* AccountRepositoryTest.java
+Entity for the Account
+Author: Tauriq-Allie Wilkinson  (219071330)
+Date: 26 July 2021
+ */
 import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.User.Account;
 import za.ac.cput.Entity.User.Payment;

@@ -1,5 +1,10 @@
 package za.ac.cput.Repository.User;
 
+/* AccountRepository.java
+Entity for the Account
+Author: Tauriq-Allie Wilkinson  (219071330)
+Date: 26 July 2021
+ */
 import za.ac.cput.Entity.User.Account;
 import za.ac.cput.Factory.User.AccountFactory;
 import za.ac.cput.Repository.IRepository;
