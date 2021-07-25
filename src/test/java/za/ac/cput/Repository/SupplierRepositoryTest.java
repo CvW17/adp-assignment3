@@ -40,4 +40,6 @@ class SupplierRepositoryTest {
         repo.delete(supplier.getSupplierID());
         System.out.println("Deleted: " + supplier.getSupplierID());
     }
+
+
 }

@@ -26,13 +26,10 @@ public class SupplierRepository implements ISupplierRepository {
 
     @Override
     public Supplier create(Supplier supplier) {
-        boolean created = supplierDB.add(supplier);
-        if(!created)
-        {
-            return null;
-        }
+        this.supplierDB.add(supplier);
         return supplier;
     }
+
 
 
     @Override
@@ -61,11 +58,11 @@ public class SupplierRepository implements ISupplierRepository {
 
     @Override
     public void delete(String supplierID) {
-        Supplier deleteSupplier = read(supplierID);
-        if (deleteSupplier == null) {
+        Supplier delete = read(supplierID);
+        if (delete == null)
             System.out.println("Supplier does not exist");
-        }
-        supplierDB.remove(deleteSupplier);
+
+        supplierDB.remove(delete);
         System.out.println("Supplier has been deleted");
     }
 
