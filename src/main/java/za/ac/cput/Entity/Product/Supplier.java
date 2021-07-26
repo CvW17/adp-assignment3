@@ -20,6 +20,27 @@ public class Supplier {
 
     }
 
+    public String getSupplierID() {
+        return supplierID;
+    }
+
+    public String getProductID() {
+        return productID;
+    }
+
+    public String getSupplierName() {
+        return supplierName;
+    }
+
+    public String getSupplierEmail() {
+        return supplierEmail;
+    }
+
+    public String getSupplierPhone() {
+        return supplierPhone;
+    }
+
+
     public static class Builder {
 
         private String supplierID, productID, supplierName, supplierEmail, supplierPhone;
