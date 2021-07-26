@@ -14,7 +14,7 @@ import za.ac.cput.Repository.Product.SupplierRepository;
 */
 import static org.junit.jupiter.api.Assertions.*;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@TestMethodOrder(MethodOrderer.MethodName.class)
 class SupplierRepositoryTest {
     private static SupplierRepository repo = SupplierRepository.getRepository();
     private static Supplier supplier = SupplierFactory.build("Carlos Bakery","Cake@yahoo",

@@ -6,11 +6,12 @@ package za.ac.cput.Repository.Product;
  */
 
 import za.ac.cput.Entity.Product.Supplier;
+import za.ac.cput.Repository.IRepository;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class SupplierRepository implements ISupplierRepository {
+public class SupplierRepository implements IRepository <Supplier, String> {
 
     private static SupplierRepository repository = null;
     private Set<Supplier> supplierDB;
@@ -73,4 +74,7 @@ public class SupplierRepository implements ISupplierRepository {
     public Set<Supplier> getAll() {
         return supplierDB;
     }
+
+
+
 }
