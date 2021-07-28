@@ -4,7 +4,7 @@
  Date: 09 June 2021
 */
 
-package za.ac.cput.Factory;
+package za.ac.cput.Factory.User;
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.User.Payment;
