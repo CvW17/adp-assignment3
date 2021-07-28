@@ -1,5 +1,5 @@
 /* Payment.java
- Entity for Payment Factory
+ Entity for Payment Service Implementation
  Author: Cameron van Wyk (219088470)
  Date: 28 July 2021
 */
