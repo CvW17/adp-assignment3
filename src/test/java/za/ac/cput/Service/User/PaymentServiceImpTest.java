@@ -1,13 +1,22 @@
+/* Payment.java
+ Test for Payment Service Implementation
+ Author: Cameron van Wyk (219088470)
+ Date: 28 July 2021
+*/
+
 package za.ac.cput.Service.User;
 
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.jupiter.api.Test;
+import org.junit.runners.MethodSorters;
 import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Factory.User.PaymentFactory;
 import za.ac.cput.Repository.User.PaymentRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@FixMethodOrder(MethodSorters.JVM)
 class PaymentServiceImpTest
 {
     private static PaymentRepository repository = new PaymentRepository();

@@ -6,7 +6,9 @@
 
 package za.ac.cput.Repository.User;
 
+import org.junit.FixMethodOrder;
 import org.junit.jupiter.api.Test;
+import org.junit.runners.MethodSorters;
 import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Factory.User.PaymentFactory;
 
@@ -14,6 +16,7 @@ import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@FixMethodOrder(MethodSorters.JVM)
 class PaymentRepositoryTest
 {
     private static PaymentRepository paymentRepository = new PaymentRepository();
