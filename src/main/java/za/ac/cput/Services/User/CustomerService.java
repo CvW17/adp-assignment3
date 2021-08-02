@@ -1,4 +1,9 @@
 package za.ac.cput.Services.User;
 
-public class CustomerService {
+import za.ac.cput.Entity.User.Customer;
+import za.ac.cput.Services.IService;
+
+
+public interface CustomerService extends IService<Customer, String> {
+
 }
