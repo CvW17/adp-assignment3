@@ -8,6 +8,13 @@ import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Factory.User.CustomerFactory;
 import static org.junit.jupiter.api.Assertions.*;
 
+/*
+ *  Name: Tye Walker
+ *  Student Number: 218338562
+ *  Group: 23
+ *
+ *  CustomerServiceTest
+ */
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class CustomerServiceTest {
