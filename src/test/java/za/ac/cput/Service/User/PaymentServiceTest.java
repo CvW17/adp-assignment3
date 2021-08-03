@@ -1,5 +1,5 @@
 /* Payment.java
- Test for Payment Service Implementation
+ Test for Payment Service
  Author: Cameron van Wyk (219088470)
  Date: 28 July 2021
 */
@@ -17,7 +17,7 @@ import za.ac.cput.Repository.User.PaymentRepository;
 import static org.junit.jupiter.api.Assertions.*;
 
 @FixMethodOrder(MethodSorters.JVM)
-class PaymentServiceImpTest
+class PaymentServiceTest
 {
     private static PaymentRepository repository = new PaymentRepository();
     private static Payment payment = PaymentFactory.createPayment("2021/06/02" , "Payment", 1000);

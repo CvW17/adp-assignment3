@@ -1,5 +1,5 @@
 /* Payment.java
- Entity for Payment Service Implementation
+ Entity for Payment Service
  Author: Cameron van Wyk (219088470)
  Date: 28 July 2021
 */
@@ -10,12 +10,12 @@ import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Repository.User.PaymentRepository;
 import za.ac.cput.Service.IService;
 
-public class PaymentServiceImp implements IService<Payment, String>
+public class PaymentService implements IService<Payment, String>
 {
-    private static PaymentServiceImp service = null;
+    private static PaymentService service = null;
     private PaymentRepository repository;
 
-    public PaymentServiceImp(PaymentRepository repository)
+    public PaymentService(PaymentRepository repository)
     {
         this.repository = repository;
     }
