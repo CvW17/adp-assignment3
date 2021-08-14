@@ -5,7 +5,7 @@ package za.ac.cput.controller.user;
  *  Student Number: 218338562
  *  Group: 23
  *
- *  CustomerControllerTest
+ *  Customer Controller Test
  */
 
 import org.junit.jupiter.api.MethodOrderer;
