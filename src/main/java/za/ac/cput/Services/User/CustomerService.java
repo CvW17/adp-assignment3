@@ -1,8 +1,11 @@
 package za.ac.cput.Services.User;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Repository.User.CustomerRepository;
 import za.ac.cput.Services.IService;
+
+import java.util.Set;
 
 /*
  *  Name: Tye Walker
@@ -12,6 +15,7 @@ import za.ac.cput.Services.IService;
  *  CustomerService
  */
 
+@Service
 public class CustomerService implements ICustomerService {
     private static CustomerService customerService;
     private CustomerRepository customerRepository;
@@ -49,5 +53,11 @@ public class CustomerService implements ICustomerService {
     @Override
     public void delete(String c) {
         this.customerRepository.delete(c);
+    }
+
+    // Get All:
+    @Override
+    public Set<Customer> getAll() {
+        return this.customerRepository.getAll();
     }
 }
