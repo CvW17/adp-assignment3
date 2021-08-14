@@ -16,12 +16,32 @@ public class CustomerController {
     private CustomerService customerService;
 
     // Create:
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    // @RequestMapping(value = "/create", method = RequestMethod.POST)
+    @PostMapping("/create")
     public Customer create(@RequestBody Customer customer) {
         Customer newCustomer = CustomerFactory.build(customer.getCustFirstName(), customer.getCustLastName(),
                                                     customer.getCustContact(), customer.getCustEmail());
         return customerService.create(newCustomer);
     }
+
+    // Read:
+    @GetMapping("/read/{id}")
+    public Customer read(@PathVariable String id) {
+        return customerService.read(id);
+    }
+
+    // Update:
+    @PostMapping("/update")
+    public Customer update(@RequestBody Customer customer) {
+        return customerService.update(customer);
+    }
+
+    // Delete: (chage to boolean)
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable String id) {
+        customerService.delete(id);
+    }
+
 
     // Get All:
     @GetMapping("/getall")
