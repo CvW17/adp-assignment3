@@ -4,6 +4,8 @@ import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Repository.User.CustomerRepository;
 import za.ac.cput.Services.IService;
 
+import java.util.Set;
+
 /*
  *  Name: Tye Walker
  *  Student Number: 218338562
@@ -49,5 +51,11 @@ public class CustomerService implements ICustomerService {
     @Override
     public void delete(String c) {
         this.customerRepository.delete(c);
+    }
+
+    // Get All:
+    @Override
+    public Set<Customer> getAll() {
+        return this.customerRepository.getAll();
     }
 }
