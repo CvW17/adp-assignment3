@@ -1,5 +1,13 @@
 package za.ac.cput.controller.user;
 
+/*
+ *  Name: Tye Walker
+ *  Student Number: 218338562
+ *  Group: 23
+ *
+ *  CustomerController.java
+ */
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import za.ac.cput.Entity.User.Customer;
