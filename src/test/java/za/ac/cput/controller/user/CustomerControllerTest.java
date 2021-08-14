@@ -16,7 +16,7 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT) // Defined port so it uses to 8080
 public class CustomerControllerTest {
     private static Customer customer = CustomerFactory.build("John", "Doe", "0821234567", "johndoe@gmail.com");
     @Autowired
@@ -38,9 +38,10 @@ public class CustomerControllerTest {
     @Order(2)
     @Test
     void read() {
-        String url = baseURL + "/read" + customer.getCustID();
+        String url = baseURL + "/read/" + customer.getCustID();
+        System.out.println("URL: " + url);
         ResponseEntity<Customer> response = restTemplate.getForEntity(url, Customer.class);
-        assertEquals(customer.getCustID(), Objects.requireNonNull(response.getBody()).getCustID());
+        assertEquals(customer.getCustID(), response.getBody().getCustID());
     }
 
     @Order(3)
