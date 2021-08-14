@@ -1,5 +1,13 @@
 package za.ac.cput.controller.user;
 
+/*
+ *  Name: Tye Walker
+ *  Student Number: 218338562
+ *  Group: 23
+ *
+ *  CustomerControllerTest
+ */
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
