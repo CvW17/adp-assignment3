@@ -1,5 +1,6 @@
 package za.ac.cput.Services.User;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Repository.User.CustomerRepository;
 import za.ac.cput.Services.IService;
@@ -14,6 +15,7 @@ import java.util.Set;
  *  CustomerService
  */
 
+@Service
 public class CustomerService implements ICustomerService {
     private static CustomerService customerService;
     private CustomerRepository customerRepository;
