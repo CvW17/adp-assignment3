@@ -4,7 +4,7 @@
  Date: 28 July 2021
 */
 
-package za.ac.cput.Service.User;
+package za.ac.cput.Services.User;
 
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
