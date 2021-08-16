@@ -1,4 +1,4 @@
-/* Payment.java
+/* PaymentServiceTest.java
  Test for Payment Service
  Author: Cameron van Wyk (219088470)
  Date: 28 July 2021

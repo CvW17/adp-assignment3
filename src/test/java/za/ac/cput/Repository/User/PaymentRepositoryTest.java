@@ -1,5 +1,5 @@
-/* Payment.java
- Entity for Payment Factory Test
+/* PaymentRepositoryTest.java
+ Entity for Payment Repository Test
  Author: Cameron van Wyk (219088470)
  Date: 23 July 2021
 */
