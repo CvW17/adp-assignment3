@@ -1,4 +1,4 @@
-package za.ac.cput.controller.user;
+package za.ac.cput.Controller.User;
 
 /*
  *  Name: Tye Walker

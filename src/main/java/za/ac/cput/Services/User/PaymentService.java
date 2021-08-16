@@ -4,11 +4,11 @@
  Date: 28 July 2021
 */
 
-package za.ac.cput.Service.User;
+package za.ac.cput.Services.User;
 
 import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Repository.User.PaymentRepository;
-import za.ac.cput.Service.IService;
+import za.ac.cput.Services.IService;
 
 public class PaymentService implements IService<Payment, String>
 {
