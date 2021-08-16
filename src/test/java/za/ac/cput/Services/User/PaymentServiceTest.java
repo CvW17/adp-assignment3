@@ -7,16 +7,14 @@
 package za.ac.cput.Services.User;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
-import org.junit.runners.MethodSorters;
+import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Factory.User.PaymentFactory;
 import za.ac.cput.Repository.User.PaymentRepository;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-@FixMethodOrder(MethodSorters.JVM)
+@TestMethodOrder(MethodOrderer.MethodName.class)
 class PaymentServiceTest
 {
     private static PaymentRepository repository = new PaymentRepository();
