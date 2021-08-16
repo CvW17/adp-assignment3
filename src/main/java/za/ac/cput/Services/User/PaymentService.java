@@ -6,10 +6,15 @@
 
 package za.ac.cput.Services.User;
 
+import org.springframework.stereotype.Service;
+import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Repository.User.PaymentRepository;
 import za.ac.cput.Services.IService;
 
+import java.util.Set;
+
+@Service
 public class PaymentService implements IService<Payment, String>
 {
     private static PaymentService service = null;
@@ -42,5 +47,10 @@ public class PaymentService implements IService<Payment, String>
     public void delete(String s)
     {
         this.repository.delete(s);
+    }
+
+    public Set<Payment> getAll()
+    {
+        return this.repository.getAll();
     }
 }
