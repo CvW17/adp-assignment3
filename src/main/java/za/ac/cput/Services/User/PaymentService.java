@@ -7,7 +7,6 @@
 package za.ac.cput.Services.User;
 
 import org.springframework.stereotype.Service;
-import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Entity.User.Payment;
 import za.ac.cput.Repository.User.PaymentRepository;
 import za.ac.cput.Services.IService;

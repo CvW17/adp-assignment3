@@ -1,28 +1,45 @@
+/* PaymentControllerTest.java
+ Entity for Payment Controller Test
+ Author: Cameron van Wyk (219088470)
+ Date: 17 August 2021
+*/
+
 package za.ac.cput.Controller.User;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PaymentControllerTest {
+class PaymentControllerTest
+{
 
     @Test
-    void create() {
+    void create()
+    {
+
     }
 
     @Test
-    void read() {
+    void read()
+    {
+
     }
 
     @Test
-    void update() {
+    void update()
+    {
+
     }
 
     @Test
-    void delete() {
+    void delete()
+    {
+
     }
 
     @Test
-    void getAll() {
+    void getAll()
+    {
+
     }
 }
