@@ -35,7 +35,7 @@ public class PaymentRepository implements IRepository<Payment, String>
     @Override
     public Payment read(String customerID)
     {
-        Payment payment = null;
+        Payment payment = new Payment();
         for(Payment p: paymentDescription)
         {
             if(p.getCustomerID().equalsIgnoreCase(customerID))

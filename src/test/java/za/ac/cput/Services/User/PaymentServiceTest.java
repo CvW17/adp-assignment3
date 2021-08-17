@@ -26,7 +26,6 @@ class PaymentServiceTest
         Payment created = repository.create(payment);
         Assert.assertEquals(payment.getCustomerID(), created.getCustomerID());
         System.out.println("Created: " + created);
-
     }
 
     @Test

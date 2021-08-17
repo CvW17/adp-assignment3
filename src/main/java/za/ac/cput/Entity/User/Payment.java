@@ -12,7 +12,7 @@ public class Payment
     private String paymentDate, paymentDetails;
     private double paymentTotal;
 
-    private Payment()
+    public Payment()
     {
         
     }

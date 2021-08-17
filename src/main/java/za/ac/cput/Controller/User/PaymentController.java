@@ -29,9 +29,9 @@ public class PaymentController
     }
 
     @GetMapping("/Read")
-    public Payment read(@RequestBody Payment payment)
+    public Payment read(@PathVariable String id)
     {
-        return paymentService.read(payment.getCustomerID());
+        return paymentService.read(id);
     }
 
     @PostMapping("/Update")
@@ -40,10 +40,10 @@ public class PaymentController
         return paymentService.update(payment);
     }
 
-    @PostMapping("/Delete")
-    public void delete(@RequestBody Payment payment)
+    @DeleteMapping("/Delete/{id}")
+    public void delete(@PathVariable String id)
     {
-        paymentService.delete(payment.getCustomerID());
+        paymentService.delete(id);
     }
 
     @GetMapping("/getAll")
@@ -51,5 +51,4 @@ public class PaymentController
     {
         return paymentService.getAll();
     }
-
 }
