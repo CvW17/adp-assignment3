@@ -1,4 +1,4 @@
-package za.ac.cput.controller.user;
+package za.ac.cput.Controller.User;
 
 /*
  *  Name: Tye Walker
@@ -21,8 +21,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import za.ac.cput.Entity.User.Customer;
 import za.ac.cput.Factory.User.CustomerFactory;
-
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
